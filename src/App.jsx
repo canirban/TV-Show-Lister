@@ -28,7 +28,7 @@ export const App = () => {
        try{
         const resp = await TVShowAPI.fetchRecommendations(tvShowId)
         if(resp.length>0)
-       setRecommendationList(resp.slice(0,10))
+       setRecommendationList(resp)
        }catch(e){}
     }
 
